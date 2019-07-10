@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TechCamp</string>
+    <string name="home_activity">Home activity</string>
+    <string name="type_something">Type something</string>
+    <string name="submit">Submit</string>
+    <string name="Register">Register</string>
+    <string name="already_hav_an_account">I Have An account?</string>
+    <string name="Username">Username</string>
+    <string name="not_a_member_yet">Create Acount Here</string>
+    <string name="Login">Login</string>
+
+</resources>
