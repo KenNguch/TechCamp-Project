@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("mTypeMessage", text);
                     Toast.makeText(MainActivity.this, "textField: " + text, Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
     }
