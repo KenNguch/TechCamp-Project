@@ -38,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
         mHaveAnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -50,11 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
     private void doRegister() {
         Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
         startActivity(intent);
-
         finish();
 
-
-//
 //        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |Intent.FLAG_ACTIVITY_NEW_TASK );
 
     }
@@ -69,6 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
         mButton = findViewById(R.id.btn_register);
         mImage = findViewById(R.id.reg_account);
         mHaveAnAccount = findViewById(R.id.txt_already_have_an_account);
+
     }
 
     private boolean validateAccount() {
@@ -97,12 +95,15 @@ public class RegisterActivity extends AppCompatActivity {
                             } else {
                                 Toast.makeText(this, "Password Does Not Match", Toast.LENGTH_LONG).show();
                             }
+                        } else {
+                            mConfirm.setError("Confirmation Password is required");
+                            mConfirm.requestFocus();
                         }
 
 
                     } else {
-                        mConfirm.setError("email is required");
-                        mConfirm.requestFocus();
+                        mPassword.setError("Password is required");
+                        mPassword.requestFocus();
                     }
 
 
