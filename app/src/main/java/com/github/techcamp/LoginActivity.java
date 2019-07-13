@@ -26,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
     CircleImageView mImage;
     int REQUEST_CODE = 1000;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
