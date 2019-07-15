@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "920827473159",
+    "firebase_url": "https://techcamp-b28bb.firebaseio.com",
+    "project_id": "techcamp-b28bb",
+    "storage_bucket": "techcamp-b28bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920827473159:android:30f9655a0c255eea",
+        "android_client_info": {
+          "package_name": "com.github.techcamp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920827473159-rsf9krdgo0m8v1qiod8i3ev8tffgca19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.github.techcamp",
+            "certificate_hash": "a0bf18c97a73398d96d645d3d0cb373824a61e94"
+          }
+        },
+        {
+          "client_id": "920827473159-so4otfe907un4d3a0akafr5ul1ho0oqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMgjKQeAXngk79oFHYseaTssN_w_NiD3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920827473159-so4otfe907un4d3a0akafr5ul1ho0oqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
