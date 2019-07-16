@@ -2,8 +2,8 @@ package com.github.techcamp.Models;
 
 public class BookModel {
 
-    private String title, category, description;
     int thumbnail;
+    private String title, category, description;
 
     public BookModel(String title, String category, String description, int thumbnail) {
         this.title = title;

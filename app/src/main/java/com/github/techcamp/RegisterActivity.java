@@ -33,8 +33,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         initializer();
-
-
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,18 +67,12 @@ public class RegisterActivity extends AppCompatActivity {
 
                 } else {
                     Toast.makeText(RegisterActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
-                    Log.d("Ngombe",task.getException().toString());
+                    Log.d("Njau", task.getException().toString());
 
                 }
-
             }
         });
-
-
-//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |Intent.FLAG_ACTIVITY_NEW_TASK );
-
     }
-
 
     public void initializer() {
 
@@ -110,14 +102,11 @@ public class RegisterActivity extends AppCompatActivity {
                         if (!confirmPassword.isEmpty()) {
                             if (password.equals(confirmPassword)) {
                                 if (password.length() >= 6) {
-
                                     isInputValid = true;
                                 } else {
                                     mPassword.setError("Password Should Be 6 Characters Long");
                                     mPassword.requestFocus();
-
                                 }
-
                             } else {
                                 Toast.makeText(this, "Password Does Not Match", Toast.LENGTH_LONG).show();
                             }
@@ -125,30 +114,22 @@ public class RegisterActivity extends AppCompatActivity {
                             mConfirm.setError("Confirmation Password is required");
                             mConfirm.requestFocus();
                         }
-
-
                     } else {
                         mPassword.setError("Password is required");
                         mPassword.requestFocus();
                     }
-
-
                 } else {
                     mEmail.setError("email is required");
                     mEmail.requestFocus();
                 }
-
-
             } else {
                 mEmail.setError("Email is required");
                 mEmail.requestFocus();
             }
-
         } else {
             mName.setError("Name is required");
             mName.requestFocus();
         }
-
         return isInputValid;
     }
 
